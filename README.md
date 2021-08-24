@@ -17,7 +17,7 @@ Stack:
 
 - Linux (server is running Ubuntu)
 - PHP (Laravel is the framework)
-- MaraiDB (almost 1:1 identical to MySQL)
+- MariaDB (almost 1:1 identical to MySQL)
 - Nginx
 - Javascript (jQuery, DataTables library)
 - CSS (Bootstrap 4)
@@ -149,11 +149,11 @@ tl;dr
 
 ### Getting the `The server requested authentication method unknown to the client` error after spinning up Homestead?
 
-Try running this in MySQL on your local environemtn: `ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'secret';`
+Try running this in MariaSQL on your local environemtn: `ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'secret';`
 
 ## Items Table
 
-The items table must be populated manually once your database is up and running. (create the database by running `php artisan migrate` once your environment is ready and you've already created your the empty database in mysql)
+The items table must be populated manually once your database is up and running. (create the database by running `php artisan migrate` once your environment is ready and you've already created your the empty database in MariaSQL)
 
 Find these insert statements in the DB repo: https://github.com/thatsmybis/classic-wow-item-db/tree/master/thatsmybis
 
